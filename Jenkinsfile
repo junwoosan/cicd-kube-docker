@@ -58,7 +58,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('sonar-pro') {
                     sh '''${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=junwoo-sonar-test \
-                   -Dsonar.projectName=junwoo-sonar-test \
+                   -Dsonar.projectName=junwoo \
                    -Dsonar.projectVersion=1.0 \
                    -Dsonar.sources=src/ \
                    -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/ \
